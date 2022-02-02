@@ -10,35 +10,23 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
-
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
-
-    <!-- <script>
-      window.onload = function () {
-        var editorSource = document.getElementById("editor")
-
-        var sync = function () {
-          var value = editorSource.value;
-          var md = marked(value);
-          console.log(md)
-         };
-         editorSource.onblur = sync
-         console.log(editorSource.onblur)
-      }
-    </script> -->
     <script src="main.js" type="module"></script>
   </head>
 
   <body>
-      <main>
-    <h1>マークダウンエディター</h1>
-    <div class="container">
+    <main>
+      <h1>マークダウンエディター</h1>
+      <div class="container">
         <div class="tab-content">
           <!--Home Input & Layout Preview-->
           <div id="home" class="tab-pane in active">
-            <div class="col-sm-5 form-group shadow-textarea">
+            <div class="col-sm-6 form-group shadow-textarea">
               <h2>エディター</h2>
               <textarea
                 id="editor"
@@ -47,41 +35,16 @@
                 placeholder="ここに書き込みます"
               ></textarea>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6 html-preview">
               <h2>HTMLプレビュー</h2>
-              <div>
+              <div class="preview-area">
                 <div id="preview"></div>
               </div>
             </div>
-            <div class="col-sm-3">
-              <h2>HTMLソース</h2>
-              <div>
-                <div id="html-preview"></div>
-              </div>
-            </div>
-          </div>
-          <!--Menu1 Converted HTML-->
-          <div id="menu1" class="tab-pane">
-            <div class="form-group shadow-textarea">
-              <h2>HTML</h2>
-              <textarea
-                id="converted"
-                class="form-control"
-                rows="20"
-              ></textarea>
-            </div>
-          </div>
-          <!--Menu２ How to use-->
-          <div id="menu2" class="tab-pane">
-            <h2>使い方</h2>
-            <div id="howto" class="col-sm-6"></div>
           </div>
         </div>
         <!--class="tab-content"-->
       </div>
-      <!--class=row"-->
-    </div>
-    <!-- End of class="container" -->
-</main>
+    </main>
   </body>
 </html>

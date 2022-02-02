@@ -9,6 +9,7 @@ body {
     width: 100%;
     display: grid;
     place-items: center;
+    background: linear-gradient(to right, rgb(183, 205, 214), rgb(133, 194, 191));
 }
 h2 {
 	color: #4e3f9b;
@@ -25,5 +26,26 @@ h1{
 .nav-tabs > li.active > a:hover{
   background-color: #4e3f9b !important;
 	color: white !important;
+}
 
+#preview {
+    background-color: white !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.preview-area {
+    width: 100%;
+    min-height: 320px !important;
+    background-color: white;
+    border: 1px solid grey;
+    border: none;
+    padding: 10px;
+}
+
+.html-preview h2 {
+    margin-bottom: 90px !important;
 }
