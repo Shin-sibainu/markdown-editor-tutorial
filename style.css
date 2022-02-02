@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+h2 {
+	color: #4e3f9b;
+	font-size: 1.5em;
+}
+h1{
+    text-align: center;
+	font-size: 4rem;
+    font-weight: 500;
+	margin-bottom: 2%;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+  background-color: #4e3f9b !important;
+	color: white !important;
+
+}
