@@ -21,29 +21,22 @@
 
   <body>
     <main>
-      <h1>マークダウンエディター</h1>
+      <h1 class="title">マークダウンエディター</h1>
       <div class="container">
-        <div class="tab-content">
-          <!--Home Input & Layout Preview-->
-          <div id="home" class="tab-pane in active">
-            <div class="col-sm-6 form-group shadow-textarea">
-              <h2>エディター</h2>
-              <textarea
-                id="editor"
-                class="form-control"
-                rows="20"
-                placeholder="ここに書き込みます"
-              ></textarea>
-            </div>
-            <div class="col-sm-6 html-preview">
-              <h2>HTMLプレビュー</h2>
-              <div class="preview-area">
-                <div id="preview"></div>
-              </div>
-            </div>
+        <div>
+          <div class="col-sm-6 form-group shadow-textarea">
+            <h2>エディター</h2>
+            <textarea
+              id="editor"
+              class="form-control"
+              placeholder="ここに書き込みます"
+            ></textarea>
+          </div>
+          <div class="col-sm-6 html-preview">
+            <h2>HTMLプレビュー</h2>
+            <div id="preview"></div>
           </div>
         </div>
-        <!--class="tab-content"-->
       </div>
     </main>
   </body>
